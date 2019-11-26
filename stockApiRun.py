@@ -7,14 +7,13 @@ from requests.exceptions import HTTPError
 from time import perf_counter
 
 
-t1_start = perf_counter() 
+t1_start = perf_counter()
 apikey = c.api_key()
 
 
 def run():
 
     conn = connect_DB()
-    # symbol_table='symbolTable'
     tickers = get_ticker_list(conn)
 
     for ticker in tickers:
@@ -29,5 +28,5 @@ def run():
 
 run()
 
-t1_stop = perf_counter() 
+t1_stop = perf_counter()
 print(t1_stop-t1_start, "seconds")
