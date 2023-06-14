@@ -1,7 +1,6 @@
 # Stocks Data
 
-Python program to retrieve stock data from API and insert into a MySQL database. 
-
+Developed Python scripts to extract data from EOD Historical Data API and load it into a MySQL database. Additionally, storage and hosting setup using AWS, ensuring efficient data management and access.
 
 
 # How to Use
